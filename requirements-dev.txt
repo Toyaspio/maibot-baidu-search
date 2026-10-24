@@ -1,0 +1,5 @@
+maibot-plugin-sdk==2.10.0
+httpx==0.28.1
+pytest>=8,<9
+ruff>=0.12,<1
+jsonschema>=4,<5

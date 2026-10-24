@@ -1,0 +1,45 @@
+{
+  "checked_at_beijing": "2026-10-24T23:50:46+08:00",
+  "authorization": "user_explicitly_authorized_a_small_live_api_test",
+  "query": "中国国家博物馆官网",
+  "endpoint": "https://qianfan.baidubce.com/v2/ai_search/web_search",
+  "auth_header": "X-Appbuilder-Authorization",
+  "http_attempts": 1,
+  "http_status": 200,
+  "search_success": true,
+  "parsed_result_count": 3,
+  "command_handler_success": true,
+  "qq_send": "isolated_sdk_rpc_double_only",
+  "automatic_retries": 0,
+  "alternative_auth_header_live_tested": false,
+  "test_quota_limit": 2,
+  "test_quota_used": 1,
+  "results": [
+    {
+      "url": "https://www.chnmuseum.cn/",
+      "date_returned_by_provider": "2026-10-24 18:59:58"
+    },
+    {
+      "title": "Home | National Museum of China",
+      "url": "https://en.chnmuseum.cn/",
+      "date_returned_by_provider": "2026-10-21 18:27:04"
+    },
+    {
+      "url": "https://en.chnmuseum.cn/research_629/nmc_lectures/",
+      "date_returned_by_provider": "2020-02-24 22:19:31",
+      "quality_note": "Provider summary was an HTTP 504 error-page excerpt; not substantive source evidence."
+    }
+  ],
+  "capture_boundary": "Console CP936/UTF-8 mismatch garbled Chinese presentation; the report retains safe structured metrics, ASCII sources and the known input query without reconstructing damaged excerpts.",
+  "secret_handling": "stdin_to_child_memory_only; no key in files, argv, environment, report or archive",
+  "production_modified": false,
+  "model_calls": 0,
+  "billing_verified": false,
+  "billing_note": "HTTP success proves this request was accepted; it does not establish a free charge or account billing status.",
+  "remaining_acceptance": [
+    "full_host_ipc",
+    "real_qq_delivery",
+    "real_planner_tool_scheduling",
+    "production_python_3_13_execution"
+  ]
+}

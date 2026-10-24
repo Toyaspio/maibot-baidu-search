@@ -1,0 +1,152 @@
+{
+  "checked_at_beijing": "2026-10-25T00:43:56+08:00",
+  "python": "3.13.16",
+  "sdk": "2.10.0",
+  "host_declared_version": "1.3.5",
+  "checks": {
+    "lint": "passed",
+    "format": "passed",
+    "tests": "passed_on_actual_host_python_3_13_sdk_2_10",
+    "python_compile": "passed",
+    "manifest_json": "passed"
+  },
+  "pytest": {
+    "tests": 117,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "real_api": {
+    "status": "passed_single_authorized_request",
+    "report": "LIVE_API_TEST.json",
+    "http_attempts": 1,
+    "http_status": 200,
+    "auth_header": "X-Appbuilder-Authorization",
+    "result_count": 3,
+    "command_handler": "passed",
+    "qq_send": "mock_only",
+    "checked_at_beijing": "2026-10-24T23:50:46+08:00",
+    "billing_verified": false
+  },
+  "full_host_ipc_qq_model_acceptance": "passed; human receipt confirmed by user",
+  "production": "installed_with_verified_backup; only necessary core restarted",
+  "integration_boundary": "Real Host RPC server, TCP loopback, MsgPack, authorization, component registry and Runner loop; HTTP and sends mocked in isolated tests. Real designated-session Planner -> Baidu -> Planner -> Replyer -> outgoing messages separately observed.",
+  "dependencies": {
+    "maibot-plugin-sdk": {
+      "version": "2.10.0",
+      "license": "LGPL-3.0-only"
+    },
+    "httpx": {
+      "version": "0.28.1",
+      "license": "BSD-3-Clause"
+    },
+    "pydantic": {
+      "version": "2.13.3",
+      "license": "MIT"
+    },
+    "pytest_test_only": {
+      "version": "8.4.2",
+      "license": "MIT"
+    }
+  },
+  "source_sha256": {
+    "Host Runner loader": "65cc8aed6d4779b63abe7ed2e168116d3c59682d5753574c6c5589a4225dce53",
+    "Host Runner main": "0fd7dcfa931cbc7f9ac5f52d6acdc5df735489489fc65fb5f405d8db50f85d72",
+    "Host RPC server": "294240aa44b8836cb634b9de8ecfcdab0159992720b4a1bf5af3af8791e9627a",
+    "Host component registry": "04c507191cd0466f860093498571cd111a6a562bc1b60b20d3004f4a61da4a07",
+    "Host Tool bridge": "5d994bd3383144a5e154057c4fc9ddb2b54ea145318558dff558997030425ad1",
+    "Host Tool result current source": "4890a1e34b52cf71b1fad0e02e0a7aafe73a0c00ec8bc04824416ceaec7f626a",
+    "Host reasoning engine": "30d8b40019daecea3ebb6499b36354c5444fa66ae906920ca705b95ed95be7bd"
+  },
+  "code_sha256": {
+    "baidu_client.py": "9dfb84d5ed988a942c7c2d4135708680914c257f2390ed8fd82c3e161431674e",
+    "build_release.py": "d86daaabd1c24fa01d2bbe24ac661f31efc5c6eb8e40813b87c851d8fbf0400b",
+    "errors.py": "7ebe7d14117d244884bd4b26d2e38d69612a247908da25162775dbdcb326d32d",
+    "plugin.py": "0a0e140f0ec6948aca8ffea7937cd4d02afd8395db1109e2606d3f5e3c51b751",
+    "quota_manager.py": "30e903567b82965bd4f69ad652e786e812a7d412799e48eaea7ae6eae4af2d27",
+    "search_service.py": "5c5291df8abc191cd5f96e30c893618ab8b3186317bffa3e3296c04bb3749610",
+    "tests/conftest.py": "c5e014fdfa3b12d7c6d6306af96baf017d3b2097674f5add94e83d7bf6416b47",
+    "tests/quota_worker.py": "5fc82d6dcf4bb7d5a8d15811ee41fda1c0dc13a689313ce91d19290d7ac23591",
+    "tests/test_baidu_client.py": "ab3a4585a5e53025e1e13a414ff2fdb70617683e9ab30fdd626bbafb206c97da",
+    "tests/test_host_tool_contract.py": "c27a10a6e3e657c7d1c9b51a8930319757feb72b4793af4995f99c4c76a0d499",
+    "tests/test_plugin.py": "68fd314e234f0989fcdf27f99c0b120a13f1f6eb6dae2082fc8e157244c999cb",
+    "tests/test_quota_manager.py": "762503fc9a233d3c409c0a078432e4c977735dcbb22093ffe67a5f6a607b787c",
+    "tests/test_runner_integration.py": "a688a06a47e63e1cda51750d461a4e396d80c55ed2272f503b0b21d58c08f43a",
+    "tests/test_search_service.py": "125eb290e531c24cb07e1c4aa706f089031d386aa2cd32c970e4978fc1455259",
+    "tests/test_wire_integration.py": "20a86eccaa6cf7a4456a1c85de57cdaa1f8db0da3da82b278946aabace00057f",
+    "_manifest.json": "0be3f518d7a00bd5460c9b9642837d7ba7306b678112c9cd19c9c567a07590fe",
+    "pyproject.toml": "3e2cb9904c158c9782334eee20b9da0468fe34d117fb9fa4cb343fa36d790eec",
+    "requirements-dev.txt": "f88d423e9f602f69eabc8a046dc4b775eb97b1f568c9578f273788362f8676dc"
+  },
+  "latest_update_scope": "Functional acceptance and production installation; updated visibility and purpose schema before 117-test passing host run.",
+  "latest_documentation_update_beijing": "2026-10-24T23:53:17+08:00",
+  "previous_local_validation": {
+    "python": "3.12.14",
+    "tests_passed": 116,
+    "scope": "earlier offline/isolated phase"
+  },
+  "real_planner_search": {
+    "observed_calls": 2,
+    "successes": 2,
+    "result_counts": [
+      5,
+      5
+    ],
+    "results_in_planner_context": true,
+    "source_urls_in_reply_required": false
+  },
+  "earlier_local_dependencies": {
+    "httpx": {
+      "version": "0.28.1",
+      "license": "BSD-3-Clause"
+    },
+    "httpcore": {
+      "version": "1.0.9",
+      "license": "BSD-3-Clause"
+    },
+    "anyio": {
+      "version": "4.15.1",
+      "license": "MIT"
+    },
+    "certifi": {
+      "version": "2026.10.23",
+      "license": "MPL-2.0"
+    },
+    "idna": {
+      "version": "3.20",
+      "license": "BSD-3-Clause"
+    },
+    "h11": {
+      "version": "0.16.0",
+      "license": "MIT"
+    },
+    "pydantic": {
+      "version": "2.14.1",
+      "license": "MIT"
+    },
+    "pydantic-core": {
+      "version": "2.50.1",
+      "license": "MIT"
+    },
+    "msgpack": {
+      "version": "1.2.3",
+      "license": "Apache-2.0"
+    },
+    "pytest": {
+      "version": "8.4.2",
+      "license": "MIT"
+    },
+    "ruff": {
+      "version": "0.17.2",
+      "license": "MIT"
+    },
+    "packaging": {
+      "version": "26.3",
+      "license": "Apache-2.0 OR BSD-2-Clause"
+    },
+    "tomlkit": {
+      "version": "0.15.2",
+      "license": "MIT"
+    }
+  }
+}
