@@ -1,0 +1,15 @@
+/.dev/
+/.venv/
+/config.toml
+/.env*
+/data/
+/temp/
+*.sqlite3*
+*.db*
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
