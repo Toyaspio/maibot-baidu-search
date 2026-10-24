@@ -37,6 +37,7 @@ FILES = [
     "docs/LIVE_API_TEST.json",
     "docs/ACCEPTANCE_REPORT.md",
     "docs/ACCEPTANCE_RESULT.json",
+    "docs/COMPATIBILITY_REPORT.md",
 ]
 
 

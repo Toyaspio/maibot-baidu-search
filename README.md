@@ -10,7 +10,7 @@ MaiSearch 为 MaiBot 提供百度千帆官方网页搜索。由 Toyaspio 原创�
 
 验收环境：MaiBot 项目版本 1.3.5、Python 3.13.16、maibot-plugin-sdk 2.10.0、httpx 0.28.1、pydantic 2.13.3。该环境中 117 项离线/隔离测试全部通过，包括真实 Host RPC、MsgPack、组件注册表和 Runner 主循环。首次本地测试环境为 Python 3.12.14。详见 [验收报告](docs/ACCEPTANCE_REPORT.md)。
 
-Manifest 暂限 MaiBot 1.3.5 / SDK 2.10.0。2026-10-24 读取的官方 SDK 主分支版本为 2.16.0，尚未验证，不能把主分支示例直接当作现场接口。其他版本应先测试，再调整 Manifest 范围；不要开启强制兼容绕过检查。使用 `MaiBotPlugin`、`config_model`、`@Command`、`@Tool` 及三个生命周期，无 `@Action` 兼容入口。
+Manifest 范围为 MaiBot 1.3.5–1.3.15 / SDK 2.10.0–2.16.0。1.3.5 / 2.10.0 已有真人搜索回复验收；1.3.15 / 2.16.0 已完成 117 项隔离兼容测试，没有新增真实搜索或 QQ 发送。区间中间版本未逐一测试。测试环境与复现命令见 [兼容性报告](docs/COMPATIBILITY_REPORT.md)。其他版本应先测试，再调整范围；不要开启强制兼容绕过检查。使用 `MaiBotPlugin`、`config_model`、`@Command`、`@Tool` 及三个生命周期，无 `@Action` 兼容入口。
 
 ## 安装
 

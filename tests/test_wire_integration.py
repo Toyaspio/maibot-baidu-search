@@ -6,7 +6,7 @@ import json
 
 import httpx
 import pytest
-from test_runner_integration import prepare, runner_modules  # noqa: F401
+from test_runner_integration import HOST_VERSION, prepare, runner_modules  # noqa: F401
 
 
 def test_host_runner_wire_tool_command_and_reload(tmp_path, runner_modules, monkeypatch):  # noqa: F811
@@ -33,7 +33,7 @@ def test_host_runner_wire_tool_command_and_reload(tmp_path, runner_modules, monk
 
     async def scenario():
         transport = tcp_module.TCPTransportServer()
-        server = rpc_module.RPCServer(transport, session_token="synthetic-wire-session", host_version="1.3.5")
+        server = rpc_module.RPCServer(transport, session_token="synthetic-wire-session", host_version=HOST_VERSION)
         ready = asyncio.Event()
 
         async def bootstrap(envelope):

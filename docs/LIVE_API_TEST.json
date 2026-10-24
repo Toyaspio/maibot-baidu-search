@@ -1,4 +1,6 @@
 {
+  "record_scope": "historical_verification_snapshot; dates and observations below retain their original meaning",
+  "current_status_reference": "../README.md; COMPATIBILITY_REPORT.md",
   "checked_at_beijing": "2026-10-24T23:50:46+08:00",
   "authorization": "user_explicitly_authorized_a_small_live_api_test",
   "query": "中国国家博物馆官网",
