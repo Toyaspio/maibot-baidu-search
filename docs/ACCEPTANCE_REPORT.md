@@ -42,6 +42,6 @@ Windows 本机缺少完整 Host 的 jsonschema 测试依赖，安装尝试遇到
 - 对百度共观察到两次生产 Tool 搜索；首次单独受控 API 测试另见 LIVE_API_TEST.json。没有为缺少链接额外强制模型再次调用。
 - 账号是否收费、免费权益和未来账单未验证；本地额度不是云账单封顶。
 - 搜索摘录可能含错误页，日期可能不准。模型可用搜索结果不等于内容绝对正确，也不保证每次都主动搜索。
-- 源码已整理，可准备 v0.1.0 发布；尚未公开推送、创建 PR、打标签或创建 GitHub Release。
+- 发布状态补记：源码已公开，PR #1、#2 已合并，[v0.1.0 Release](https://github.com/Toyaspio/maibot-baidu-search/releases/tag/v0.1.0) 已发布。该标签保留首次发布快照；main 后续修正须通过新版本发布，不移动旧标签。
 
 原先离线及单次 API 验证的历史状态见 TEST_REPORT.md；以本报告为最新功能验收状态。

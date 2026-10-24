@@ -2,7 +2,7 @@
 
 MaiSearch 为 MaiBot 提供百度千帆官方网页搜索。由 Toyaspio 原创编写，AI 辅助开发，未 Fork 或复制其他搜索插件。插件代码采用 MIT 协议，SDK 和依赖保留各自协议。
 
-**版本：0.1.0，隔离测试及指定会话中的真实规划器搜索、回复链路验收通过。源码已上传 GitHub，正式 Release 尚未发布。**
+**版本：0.1.0，隔离测试及指定会话中的真实规划器搜索、回复链路验收通过。源码已上传 GitHub，[v0.1.0 Release](https://github.com/Toyaspio/maibot-baidu-search/releases/tag/v0.1.0) 已发布。**
 
 已实现 `/baidu 关键词` 和 `baidu_web_search` Tool，返回标题、摘要、原始 URL 及可获得的网页日期；总开关、自主搜索均默认关闭。只访问固定官方搜索接口，不爬取百度搜索结果页，不抓取结果网页。
 
@@ -129,7 +129,7 @@ python -m ruff format --check .
 
 常规测试使用真实 SDK 和 httpx MockTransport，禁用测试进程真实 HTTP 传输；不需要 Key。Runner 测试需要设置 `MAISEARCH_HOST_SOURCE` 为匹配版本源码根目录（内含 `src/plugin_runtime`）；宿主返回契约测试还需要 `MAISEARCH_TOOLING_SOURCE` 指向匹配版本的 `src/core/tooling.py`。未提供时会明确 skip，不能把 skip 写成通过。该测试为隔离组件集成，RPC/日志/宿主版本辅助设施用替身，宿主返回契约执行从源文件 AST 选出的未修改方法，不是完整 Host IPC、QQ 收发或模型规划验收。详细复现条件、实际结果和未验证项见 [测试报告](docs/TEST_REPORT.md)。
 
-已在用户指定会话确认真实规划器两次调用本插件、每次成功获得 5 条结果，结果进入下一轮规划器上下文后产生回复。聊天回复不强制展示链接，Tool 内部仍保留可核验来源。该结论不保证模型每次回答都正确，也不表示账号调用免费。源码已上传本仓库；正式 Release 将由维护者单独发布。
+已在用户指定会话确认真实规划器两次调用本插件、每次成功获得 5 条结果，结果进入下一轮规划器上下文后产生回复。聊天回复不强制展示链接，Tool 内部仍保留可核验来源。该结论不保证模型每次回答都正确，也不表示账号调用免费。源码及 v0.1.0 Release 已公开。main 分支后续修正不会改变已发布标签的源码；新版本应由维护者单独发布。
 
 ## 贡献和协议
 
