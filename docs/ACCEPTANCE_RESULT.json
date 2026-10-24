@@ -1,4 +1,6 @@
 {
+  "record_scope": "historical_verification_snapshot; dates and observations below retain their original meaning",
+  "current_status_reference": "../README.md; COMPATIBILITY_REPORT.md",
   "verification_date_beijing": "2026-10-25",
   "functional_acceptance_passed": true,
   "production_installed": true,
@@ -7,21 +9,39 @@
   "sdk_version": "2.10.0",
   "httpx_version": "0.28.1",
   "pydantic_version": "2.13.3",
-  "offline_tests": {"passed": 117, "failed": 0, "errors": 0, "skipped": 0, "seconds": 8.66},
+  "offline_tests": {
+    "passed": 117,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 8.66
+  },
   "real_host_runner_ipc_test": "passed",
-  "formal_webui_config_schema": {"passed": true, "api_key_input_type": "password"},
+  "formal_webui_config_schema": {
+    "passed": true,
+    "api_key_input_type": "password"
+  },
   "real_planner_evidence": {
     "test_scope": "user_designated_group",
     "plugin_tool_calls_observed": 2,
-    "search_success": [true, true],
-    "result_counts": [5, 5],
+    "search_success": [
+      true,
+      true
+    ],
+    "result_counts": [
+      5,
+      5
+    ],
     "results_present_in_subsequent_planner_context": true,
     "subsequent_reply_tool_call": true,
     "outgoing_bot_message_records_present": true,
     "source_url_in_chat_reply_required": false,
     "human_receipt_confirmation": "confirmed_by_user"
   },
-  "limits": {"daily_total": 20, "daily_tool": 5},
+  "limits": {
+    "daily_total": 20,
+    "daily_tool": 5
+  },
   "private_config_mode": "0600",
   "backup_and_rollback_feasibility_checked": true,
   "actual_production_rollback_performed": false,
@@ -32,5 +52,6 @@
   "only_core_restarted": true,
   "billing_verified": false,
   "public_push_or_release_created": false,
-  "raw_chat_identity_or_credentials_in_report": false
+  "raw_chat_identity_or_credentials_in_report": false,
+  "public_push_or_release_created_note": "false describes this acceptance run only; v0.1.0 was subsequently published on 2026-10-25 Beijing time"
 }

@@ -1,4 +1,6 @@
 {
+  "record_scope": "historical_verification_snapshot; dates and observations below retain their original meaning",
+  "current_status_reference": "../README.md; COMPATIBILITY_REPORT.md",
   "checked_at_beijing": "2026-10-25T00:43:56+08:00",
   "python": "3.13.16",
   "sdk": "2.10.0",
